@@ -1,0 +1,4 @@
+#/bin/sh
+
+google-chrome --app=https://www.evernote.com/Home.action
+

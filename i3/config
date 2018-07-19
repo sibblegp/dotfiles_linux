@@ -219,6 +219,8 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always compton -f
+exec_always compton -f --config ~/.config/compton/compton.conf
 exec xinput set-prop 11 277 1
 exec xinput set-prop 11 285 1
+exec --no-startup-id nm-applet
+exec xss-lock -- i3lock
