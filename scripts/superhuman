@@ -1,0 +1,4 @@
+#/bin/sh
+
+google-chrome --app=https://mail.superhuman.com
+

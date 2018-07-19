@@ -1,0 +1,6 @@
+#/bin/sh
+
+amixer -q set Master 5%+ unmute
+amixer set Speaker on
+amixer set Headphone on
+
