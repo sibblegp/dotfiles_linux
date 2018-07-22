@@ -7,6 +7,11 @@ export PROMPT_END_TAG_COLOR=190
 alias clip='xclip -selection clipboard'
 alias pclip='xclip -selection clipboard -o'
 
+# Load NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 

@@ -117,6 +117,11 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# move to next workspace
+
+bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -219,7 +224,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always compton -f --config ~/.config/compton/compton.conf
+exec_always compton -f -c -C --config ~/.config/compton/compton.conf
 exec xinput set-prop 11 277 1
 exec xinput set-prop 11 285 1
 exec --no-startup-id nm-applet
