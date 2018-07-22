@@ -224,8 +224,15 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec_always compton -f -c -C --config ~/.config/compton/compton.conf
-exec xinput set-prop 11 277 1
-exec xinput set-prop 11 285 1
+exec_always compton -f --config ~/.config/compton/compton.conf
+exec xinput set-prop 11 278 1
+exec xinput set-prop 11 286 1
+exec xinput set-prop 11 303 0
 exec --no-startup-id nm-applet
-exec xss-lock -- i3lock
+exec xset s 600 600
+# exec --no-startup-id xset dpms 600
+# exec xss-lock -- i3lock
+exec --no-startup-id xss-lock -- dm-tool switch-to-greeter
+exec --no-startup-id libinput-gestures-setup start
+exec guake
+exec --no-startup-id feh --bg-center Downloads/QJRat3.jpg 
